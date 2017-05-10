@@ -1,5 +1,5 @@
 const XLSX = require('xlsx');
-const workbook = XLSX.readFile('teste.xlsx');
+const workbook = XLSX.readFile(__dirname + '/teste.xlsx');
 
-console.log(workbook);
-workbook.worksheet[ 'test' ];
+//console.log(workbook);
+console.log(workbook.Sheets[ 'test' ]);
